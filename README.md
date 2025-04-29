@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+## Multi-Store E-commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce platform that allows users to browse multiple stores, add products to store-specific shopping carts, and complete the checkout process. Built with Next.js, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Component Library**: [shadcn/ui](https://ui.shadcn.com/)
+- **Client State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Server State Management**: [Supabase](https://supabase.com/) with [Tanstack Query](https://tanstack.com/query)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) with [Zod](https://github.com/colinhacks/zod) validation
+- **Authentication**: Supabase auth provider with role-based access control
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Store Management
+- Browse multiple stores with detailed information
+- View store-specific products and offerings
+- Filter and search stores (planned)
 
-- Configure the top-level `parserOptions` property like this:
+### Shopping Experience
+- Store-specific shopping carts
+- Product customization with options
+- Real-time price calculations
+- Persistent cart storage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Checkout Process
+- Multi-step checkout flow
+- Order information collection
+- Order review and confirmation
+- Order history tracking
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### User Management
+- Authentication with role-based access control
+- User profiles
+- Different permissions for store owners and customers
+
+### Admin Dashboard
+- Store management for owners
+- Product and inventory management
+- Order processing and tracking
+- Sales analytics and reporting
